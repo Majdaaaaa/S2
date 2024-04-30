@@ -1,0 +1,18 @@
+body {
+  background-color:lavender;
+}
+h1{
+  text-align:center;
+  font-size:xx-large;
+}
+header{
+  font-size:small;
+  font-style: italic;
+}
+footer{
+  font-size: small;
+  color: #6d7278; 
+}
+ul.a{
+  list-style-type: lower-greek;
+}

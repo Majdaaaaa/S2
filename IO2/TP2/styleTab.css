@@ -1,0 +1,30 @@
+caption{
+    font-weight:bold ;
+    margin-bottom: 5%;
+    text-align: center;
+}
+body{
+    text-align: center;
+}
+thead{
+    color: blue;
+    font-weight:bold ;
+    border-color: blue;
+}
+tfoot{
+    color:red;
+    border-color: red;
+}
+table{
+    text-align: center;
+    border-width: 2px;
+    border-style:solid;
+    border-color: black;
+}
+td{
+    border-width: 5%;
+}
+td.a{
+    width: 100%;
+    color:aqua;
+}

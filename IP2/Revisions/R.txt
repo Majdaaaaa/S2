@@ -1,0 +1,4 @@
+Interface: c un contrat, une liste de methode que chaque classe qui l'implemente s'engage a crée 
+return utilisable dans les fonctions void pour arreter une fonction 
+les instances sont les objets créer par cette classe
+Implements:  s'engager a crée toute les methode de l'interface 

@@ -1,0 +1,5 @@
+exo8:
+//pour le type du tableau d'AdressBook 
+//pour afficher faire une boucle et afficher chaque case et afficher avce ls()
+exo9:
+//lsByName pour AdressBook[] est static 

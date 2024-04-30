@@ -1,0 +1,27 @@
+
+    // quand ya une methode qui affiche, tout ca justifie de mettre les attribut en privée
+    // le nombre de gens est toujours static 
+    //et id= le nombre de gens +1 (nombre de gens qui est static donc faut l'appeler de facon static donc Class.nbdegens)
+    //pout set gravité faut faire attention au condition de validation de la valeur mais on verifie pas ca dans le constructeur 
+    //faut trié dans l'odre croissant par gravité
+    // dans les liste le seule attribut est le 1er et on fait un contructeur vide avec first=null;
+    //dans Cellule 2 constructeur 1 avec un patient et 1 avec 
+    // Urgence=la salle d'attente 
+    //toujours delegués a la 1ere Cellule
+    //urgence absolue: parcourir tout et ajouter 1 quans gravite==0
+    //les parcours de liste c simple
+    //pour le recursive l'idee est d'a chaque fois delegués le travail au suivant 
+    // pour le partiel la plus part des questions tiennent en 4-5 lignes sauf 1
+    //suuprimer: si liste==null return false, si first==le patient a supprimer alors first=first.next else on delegue
+    une fois le patient trouver on dis que le precendent de celuici a comme suivant le suivant du suivant donc this.suivant=this.suivant.suivant(genre on fait une boucle que ce soit en ite ou rec faut s'arreter au patient avant celui qu'on veut supprimer)
+    //mais si first est le patient a supprmier mais que le reste est null alors first=null
+    //pour ajouter: faut faire attention au gravité, soit la liste est vide et first =nv soit la liste a un element et first.gravite>nv.gravite et on met nv devant first donc first=nv et bref apres tu delegue et tu fais une methode dans Cellule et tu t'arrete a la cellule dans le suivant a une gravite moins grave que nv et tu ajoute grace a elle
+    //c'est plus facile a faire en recursive
+    //toujours faire des schema pour bien comprendre ce qu'il se passe 
+    //exo7:
+    //tableau est final son adresse ne change pas mais ses valeurs peuvent changer 
+    //on refait un contructeur pout les urgence avec les medecins 
+    //on peut avoir a ecrire une methode qui est pas demander mais dont on besoin dans une autre methode
+    //deux methode peuvent avoir le meme nom mais une differente signatures(signatures= les arguments et ce que la methode renvoie )
+    //on a le droit de citer une methode dans une methode demandé mais sans l'ecrire ``
+    //

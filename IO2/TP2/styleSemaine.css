@@ -1,0 +1,20 @@
+h1{
+    text-align:center;
+    font-size:xx-large;
+}
+body{
+    background-color: palegreen;
+    color:slateblue;
+}
+
+p{
+    background-color: papayawhip;
+}
+nav{
+    background-color: peachpuff;
+}
+a{
+    color:dimgray;
+    text-decoration: none;
+    font-size: large;
+}

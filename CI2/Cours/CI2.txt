@@ -1,0 +1,67 @@
+Variables primitifs: 
+Ils doivent être déclarées et initialisées, en les initialisant les variables sont associés à un espace de stockage. 
+Ex d'initialisation: int n=14;
+Le type int défini la place que prends la variable dans la mémoire.
+D'autre variables primitifs: byte,short,long,int, float, double, char, boolean.
+
+Tableaux:
+int[] t;
+La variable t est une référence vers un tableau d'entiers.
+Ici un tableau n'est pas crée uniquement une référence vers lui l'est.
+t=new int [5];
+new retourne une adresse mémoire dans l'espace de stockage permettant de stocker 5 entiers.
+new sert a mettre des choses dans une variable non primitif.
+
+Pile et tas:
+Les piles c'est pour les variables primitifs(aussi on met dedans les adresses des tableaux qui pointent vers les tableaux dans le tas), les tas pour les autres.
+Plus convenablement: la pile c'est pour les variables locales, le tas pour les espaces de stockages alloués via l'opérateur new.
+
+Pile:
+Une pile est utilisé pour pour représenter des ensembles dynamiques dans lesquels, s’ils ne sont pas vides, nous ne pouvons supprimer que l’élément qui a été inséré le plus récent.
+Trois opérations a faire sur des piles:
+empty(): teste si la pile est vide.
+push(x): ajoute l'élément x au sommet de la pile(empiler).
+pop(): enlève la valeur au sommet de la pile et la renvoie(dépiler).
+
+Utilisation des piles:
+Forme infixe: x+y.
+Forme postfixe: xy+.
+Forme préfixe:+xy.
+
+Algorithme d'évaluation d'une forme postfixe:
+on lit l’expression de gauche à droite
+si un élément est un opérande, on l’empile sinon (c’est un opérateur (binaire))
+on dépile (deux) éléments on exécute l’opération
+on empile son résultat
+à la fin, la pile contient l’évaluation
+
+Algoritme de transformation d'une forme postfixe en forme prefixe:
+On lit la forme postfixe de gauche à droite.
+Si un élément est un opérande, on l’empile 
+Sinon (c’est un opérateur (binaire))
+	On dépile (deux) éléments
+	On fait la forme préfixe (opérateur, deuxième élément dépilé, premier élément dépilé) 
+	On empile son résultat
+A la fin, la pile contient la forme préfixe.
+
+Algorithme d'evaluation prefixe:
+-on lit l’expression de droite a gauche  
+- si element operande(nombre) : empiler
+-sinon operateur :
+	-on depile 2 elements 
+	-on execute l’operation 
+	-on empile le resultat 
+-res =sommet de la pile 
+
+Algorithme de transformation d'une forme infixe en forme postfixe:
+lire de gauche a droite 
+-si element operande : afficher
+-si ‘(‘ : empiler 
+-si ‘)’ : depiler et afficher jusqu’a ‘(‘ (premiere parenthese ouvrante qu’on affiche pas)
+-si element operateur : 
+	-tant que la priorité du sommet de pile ≥ a la priorité de l’operateur: depiler et afficher le sommet de la pile et empiler operateur 
+	-depiler et afficher 
+(voir tel pour les bails  de propriete 2 exemple)
+
+
+
